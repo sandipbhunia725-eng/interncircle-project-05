@@ -32,7 +32,7 @@ def load_api_key():
     """Load the API key from .env; return None if it is missing."""
     env_path = Path(__file__).with_name(".env")
     load_dotenv(dotenv_path=env_path)
-    key = os.getenv("OPENWEATHER_KEY", "").strip()
+    key = os.getenv("8d3947cde01ac5f7cbf261367130dba0", "").strip()
     if not key or key == "your_key_here":
         print("API key missing. Add OPENWEATHER_KEY=your_key_here to your .env file.")
         return None
