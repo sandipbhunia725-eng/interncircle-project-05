@@ -1,0 +1,9 @@
+Project 05 – Weather App with Live OpenWeather API
+
+I built a Python CLI weather application using the Requests library and the OpenWeather API. The app retrieves current weather and a 5-day forecast for a city, parses the JSON response, and displays temperature in Celsius, humidity, weather description, wind speed, and forecast date/temperature/description.
+
+The app uses a 10-second request timeout, handles unknown cities (404), invalid or inactive API keys (401), other API errors, network problems, and missing JSON fields. It caches results for five minutes to reduce repeated API calls.
+
+API key protection: The key is stored locally in a .env file and loaded with python-dotenv. The .env file is listed in .gitignore and is not uploaded to GitHub. Only .env.example with a placeholder is shared. I check git status before committing to ensure the real key is not tracked.
+
+I tested the application with multiple cities and checked the current weather and forecast output.
